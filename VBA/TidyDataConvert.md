@@ -93,17 +93,20 @@ Sub TidyDataLabels()
     Next i
     
     '─── 4. 各欄向下填滿空白 ───────────────────────────
-    Dim c As Long
-    For c = off + 1 To off + 4
-        For i = 3 To lastRow
-            If ws.Cells(i, c).Value = "" Then
-                ws.Cells(i, c).Value = ws.Cells(i - 1, c).Value
+    Dim col As Long, data() As Variant
+    For col = off + 1 To off + 4
+        data = ws.Range(ws.Cells(2, col), ws.Cells(lastRow, col)).Value
+        For i = 2 To UBound(data, 1)
+            If IsEmpty(data(i, 1)) Then
+                data(i, 1) = data(i - 1, 1)
             End If
         Next i
-    Next c
+        ws.Range(ws.Cells(2, col), ws.Cells(lastRow, col)).Value = data
+    Next col
     
     MsgBox "Tidy data 標籤處理完成！", vbInformation
 End Sub
+
 
 
 
