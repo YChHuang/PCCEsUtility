@@ -69,11 +69,8 @@ Sub TidyDataLabels()
     '─── 3. 掃描 A 欄，將符合層級的原文貼到 offset+n ─────────
     Dim lastRow As Long
     lastRow = ws.Cells(ws.Rows.Count, "A").End(xlUp).row
-    Dim delRange As Range
     '清空範圍
-    Set delRange = ws.Range(ws.Cells(1, off + 1), ws.Cells(lastRow, off + 4))
-    delRange.Clear
-    
+    ws.Range(ws.Cells(1, off + 1), ws.Cells(lastRow, off + 4)).Clear
     
     
     Dim i As Long
