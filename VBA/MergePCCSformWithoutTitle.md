@@ -12,7 +12,7 @@ PCCES生成的標單會自動把裝不下的文字溢出到下一列，這時可
 * 請注意不要有小計、備註等奇怪的列
 * VBA會跑比較久請耐心等待
 
-原本溢出狀態  
+原本溢出狀態  (※本文項目僅供系統測試與範例用途，並不代表實際採購或設備規格。)
 <img width="947" height="193" alt="螢幕擷取畫面 2025-07-17 150851" src="https://github.com/user-attachments/assets/f7eae233-6160-4cbe-895b-1c131d48f70f" />  
 執行後  
 <img width="946" height="147" alt="螢幕擷取畫面 2025-07-17 150919" src="https://github.com/user-attachments/assets/68670391-0d7a-476c-9c59-f55b66f38bcf" />  
