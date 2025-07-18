@@ -69,8 +69,15 @@ Sub TidyDataLabels()
     '─── 3. 掃描 A 欄，將符合層級的原文貼到 offset+n ─────────
     Dim lastRow As Long
     lastRow = ws.Cells(ws.Rows.Count, "A").End(xlUp).row
+    Dim delRange As Range
+    '清空範圍
+    Set delRange = ws.Range(ws.Cells(1, off + 1), ws.Cells(lastRow, off + 4))
+    delRange.Clear
+    
+    
     
     Dim i As Long
+    Dim j As Long
     Dim txt As String
     Dim content As String
     
@@ -80,12 +87,17 @@ Sub TidyDataLabels()
         
         If re1.test(txt) Then
             ws.Cells(i, off + 1).Value = content
+            For j = 2 To 4
+                ws.Cells(i, off + j).Value = "標題"
+            Next j
         End If
         If re2.test(txt) Then
             ws.Cells(i, off + 2).Value = content
+            ws.Cells(i, off + 3).Value = "標題"
         End If
         If re3.test(txt) Then
             ws.Cells(i, off + 3).Value = content
+            ws.Cells(i, off + 4).Value = "標題"
         End If
         If re4.test(txt) Then
             ws.Cells(i, off + 4).Value = content
@@ -103,10 +115,9 @@ Sub TidyDataLabels()
         Next i
         ws.Range(ws.Cells(2, col), ws.Cells(lastRow, col)).Value = data
     Next col
-    
+
     MsgBox "Tidy data 標籤處理完成！", vbInformation
 End Sub
-
 
 
 
