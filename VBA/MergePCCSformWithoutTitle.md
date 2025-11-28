@@ -6,12 +6,13 @@ PCCES生成的標單會自動把裝不下的文字溢出到下一列，這時可
 * ALT+F11打開VBA介面
 * 在左方的專案Project找到要新增的檔案->模組->插入->模組
 * 貼上VBA就可以執行了
-* 目前是使用ActiveSheet也就是使用中工作表，也就是目前用哪個檔案就用它來執行
-* 首先會詢問要資料的起始列，這避免操作到一些標題之類的
-* 判斷邏輯是"項次為空且沒有單位 = 溢出列"符合條件的標單請不要使用
-* 請注意不要有小計、備註等奇怪的列
-* VBA會跑比較久請耐心等待
 
+### 效果
+
+![死圖](VBA_Utility_SampleFiles/sample.png)
+![死圖](VBA_Utility_SampleFiles/origin.png)
+![死圖](VBA_Utility_SampleFiles/MergePreProcess.png)
+![死圖](VBA_Utility_SampleFiles/MergeResult.png)
 
 
 ```VBA
