@@ -6,11 +6,15 @@ PCCES生成的標單會自動把裝不下的文字溢出到下一列，這時可
 * ALT+F11打開VBA介面
 * 在左方的專案Project找到要新增的檔案->模組->插入->模組
 * 貼上VBA就可以執行了
+* 滑鼠記得放在作用域內
 
 ### 效果
 
+*原本的溢出格式*
 ![死圖](../VBA_Utility_SampleFiles/origin.png)
+*詢問資料開始，這邊我的Row1是標題，所以我填入2*
 ![死圖](../VBA_Utility_SampleFiles/MergePreProcess.png)
+*結果*
 ![死圖](../VBA_Utility_SampleFiles/MergeResult.png)
 
 
