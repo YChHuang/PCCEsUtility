@@ -14,7 +14,7 @@ PCCES生成的標單會自動把裝不下的文字溢出到下一列，這時可
 ![死圖](../VBA_Utility_SampleFiles/origin.png)
 *詢問資料開始，這邊我的Row1是標題，所以我填入2*
 ![死圖](../VBA_Utility_SampleFiles/MergePreProcess.png)
-*結果*
+*結果(都合併了)*
 ![死圖](../VBA_Utility_SampleFiles/MergeResult.png)
 
 
