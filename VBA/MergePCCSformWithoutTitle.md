@@ -9,10 +9,9 @@ PCCES生成的標單會自動把裝不下的文字溢出到下一列，這時可
 
 ### 效果
 
-![死圖](./VBA_Utility_SampleFiles/sample.png)
-![死圖](./VBA_Utility_SampleFiles/origin.png)
-![死圖](./VBA_Utility_SampleFiles/MergePreProcess.png)
-![死圖](./VBA_Utility_SampleFiles/MergeResult.png)
+![死圖](../VBA_Utility_SampleFiles/origin.png)
+![死圖](../VBA_Utility_SampleFiles/MergePreProcess.png)
+![死圖](../VBA_Utility_SampleFiles/MergeResult.png)
 
 
 ```VBA
