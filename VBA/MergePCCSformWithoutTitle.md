@@ -81,7 +81,7 @@ Sub MergePCCSformWithoutTitle_ByUnit()
     
 
     '重設scrollBar，可以註解看看少了這段會怎樣，把右邊的scrollBar下拉到底
-    '強制要求excel計算UsedRange，超低能但只要呼叫他就重設了
+    '強制要求excel計算UsedRange，只要呼叫他就重設了
     Set dummy = ws.UsedRange
     dummy.EntireRow.AutoFit
     
